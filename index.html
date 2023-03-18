@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <input type="text" id="cal" placeholder="0">
+                <button class="equal" style="background-color: rgb(187, 185, 185); color: black;" onclick="document.getElementById('cal').value ='' ">C</button>
+                <button class="equal" style="background-color: rgb(187, 185, 185); color: black;" onclick="document.getElementById('cal').value +='**' ">**</button>
+                <button class="equal" style="background-color: rgb(187, 185, 185); color: black;" onclick="document.getElementById('cal').value +='%'">%</button>
+                <button class="equal" style="background-color: rgb(219, 111, 10);" onclick="document.getElementById('cal').value +='/'">/</button>
+                <button class="equal"  onclick="document.getElementById('cal').value +='7'">7</button>
+                <button class="equal" onclick="document.getElementById('cal').value +='8'">8</button>
+                <button class="equal" onclick="document.getElementById('cal').value +='9'">9</button>
+                <button class="equal" style="background-color: rgb(219, 111, 10);" onclick="document.getElementById('cal').value +='*'">*</button>
+                <button class="equal" onclick="document.getElementById('cal').value +='4'">4</button>
+                <button class="equal" onclick="document.getElementById('cal').value +='5'">5</button>
+                <button class="equal" onclick="document.getElementById('cal').value +='6'">6</button>
+                <button class="equal" style="background-color: rgb(219, 111, 10);" onclick="document.getElementById('cal').value +='-'">-</button>
+                <button class="equal" onclick="document.getElementById('cal').value +='1'">1</button>
+                <button class="equal" onclick="document.getElementById('cal').value +='2'">2</button>
+                <button class="equal" onclick="document.getElementById('cal').value +='3'">3</button>
+                <button class="equal" style="background-color: rgb(219, 111, 10);" onclick="document.getElementById('cal').value +='+'">+</button>
+                <button class="equal" onclick="document.getElementById('cal').value +='0'">0</button>
+                <button class="equal" onclick="document.getElementById('cal').value +='.'">.</button>
+                <button id="eqaul" onclick="document.getElementById('cal').value = eval(document.getElementById('cal').value)" > = </button>
+        </div>
+    </div>        
+    
+
+</html>
